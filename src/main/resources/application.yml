@@ -1,8 +1,4 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/avengers_db
-    username: postgres
-    password: 123456
   jpa:
     open-in-view: false
     show-sql: true
@@ -22,6 +18,8 @@ spring:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
   application:
     name: avengers
+  profiles:
+    active: dev
   jmx:
     enabled: false
   data:
